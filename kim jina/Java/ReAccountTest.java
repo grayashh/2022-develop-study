@@ -3,9 +3,9 @@ import java.util.Scanner;
 class Account {
     static private String owner;
     static private long balance;
-    static Scanner sc = new Scanner(System.in); 
+    static private long amount;
+    static Scanner sc = new Scanner(System.in);
 
-    public Account() {} //Account의 생성자 메소드
 
     public static String getOwner() {
         return owner;
@@ -13,30 +13,28 @@ class Account {
     public static long getBalance() {
         return balance;
     }
-    public String owner() {
+    public void owner() {
         System.out.println("예금주 성명을 입력하시오: ");
         owner = sc.next();
-        return owner;
     }
     public void balance() {
         System.out.println("잔액을 입력하시오: ");
         balance = sc.nextLong();
     }
     public void deposit() {
-        long amount;
         System.out.println("저축할 금액을 입력하시오: ");
         amount = sc.nextLong();
         balance += amount;
     }
     public void withdraw() { 
-        long amount;
         System.out.println("인출할 금액을 입력하시오: ");
         amount = sc.nextLong();
         
-        if (amount > balance) 
+        if (amount > balance)
             System.out.println("계좌 잔액이 부족합니다.");
         else 
             balance -= amount;
+    
 
     }
     public void account() {
