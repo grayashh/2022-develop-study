@@ -5,7 +5,7 @@ public class CastExceptionTest {
     try {
     casting(r);
     }catch (ClassCastException exception) {
-      System.out.println("업 캐스팅이 잘못되었습니다.");
+      System.out.println("자식 클래스가 아닌 유형에 대한 참조를 캐스팅했습니다.");
     }
   }
 
