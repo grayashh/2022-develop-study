@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class numbers {
+public class Numbers {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         int[] numbers = new int[5];
