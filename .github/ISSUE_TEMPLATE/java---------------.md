@@ -3,7 +3,7 @@ name: Java 주소록 프로젝트 개발 현황
 about: Java 주소록 프로젝트 개발 현황공유를 위한 Issue Template 입니다.
 title: "[1W1D] Java 주소록 프로젝트 개발 현황"
 labels: ''
-assignees: grayashh
+assignees: ''
 
 ---
 
