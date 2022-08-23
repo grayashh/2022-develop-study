@@ -26,7 +26,4 @@ public class CarTest {
         public static int getNumberOfRedCar() {
             return NumberOfRedCar;
         }
-        public int NumberOfRedCar(){
-            return NumberOfRedCar;
-        }
     }
