@@ -4,7 +4,7 @@ import java.io.*;
 import java.io.IOException;
 
 public class SortWords {
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IOException {
     Scanner sc = new Scanner(System.in);
     System.out.print("입력: ");
     String words = sc.nextLine();
@@ -20,15 +20,11 @@ public class SortWords {
       System.out.print(arr[i] + ", ");
     }
     File file = new File("sort.txt");
-    try {
     FileWriter fw = new FileWriter(file);
     for (int i = 0; i < arr.length; i++) {
       fw.write(arr[i] + ", ");
     }    
     fw.close();
-    } catch (IOException e) {
-      System.out.println(e.toString());
-    }
     sc.close();
   }
 }
