@@ -10,7 +10,7 @@ public class AreaCalculator {
       Circle c = new Circle();
       c.name = "원";
       c.radius = 4;
-      Shape[] shapes = {s,t,c}; //리스트 s,t,c 들어가는거 ?
+      Shape[] shapes = {s, t, c};
       for (int i = 0; i<shapes.length; i++) {
           System.out.printf("%s의 넓이: %2f\n", shapes[i].name, shapes[i].area());
       }
@@ -26,7 +26,7 @@ class Shape {
 
 class Square extends Shape {
   int length; //정사각형 한변의 길이
-  double area() {return length*length;}
+  double area() {return Math.pow(length, 2);}
 }
 
 class Triangle extends Shape {
